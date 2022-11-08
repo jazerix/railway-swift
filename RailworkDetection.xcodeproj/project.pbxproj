@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABC52685291ABC0E00306543 /* RailworkDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC52684291ABC0E00306543 /* RailworkDetectionApp.swift */; };
+		ABC52687291ABC0E00306543 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC52686291ABC0E00306543 /* ContentView.swift */; };
+		ABC52689291ABC0F00306543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC52688291ABC0F00306543 /* Assets.xcassets */; };
+		ABC5268C291ABC0F00306543 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC5268B291ABC0F00306543 /* Preview Assets.xcassets */; };
+		ABC5268E291ABC0F00306543 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC5268D291ABC0F00306543 /* Persistence.swift */; };
+		ABC52691291ABC0F00306543 /* RailworkDetection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABC5268F291ABC0F00306543 /* RailworkDetection.xcdatamodeld */; };
+		ABC5269C291ABC0F00306543 /* RailworkDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC5269B291ABC0F00306543 /* RailworkDetectionTests.swift */; };
+		ABC526A6291ABC0F00306543 /* RailworkDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC526A5291ABC0F00306543 /* RailworkDetectionUITests.swift */; };
+		ABC526A8291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC526A7291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABC52698291ABC0F00306543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC52679291ABC0E00306543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC52680291ABC0E00306543;
+			remoteInfo = RailworkDetection;
+		};
+		ABC526A2291ABC0F00306543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC52679291ABC0E00306543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC52680291ABC0E00306543;
+			remoteInfo = RailworkDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABC52681291ABC0E00306543 /* RailworkDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailworkDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC52684291ABC0E00306543 /* RailworkDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailworkDetectionApp.swift; sourceTree = "<group>"; };
+		ABC52686291ABC0E00306543 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABC52688291ABC0F00306543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABC5268B291ABC0F00306543 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABC5268D291ABC0F00306543 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ABC52690291ABC0F00306543 /* RailworkDetection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RailworkDetection.xcdatamodel; sourceTree = "<group>"; };
+		ABC52692291ABC0F00306543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC52697291ABC0F00306543 /* RailworkDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailworkDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC5269B291ABC0F00306543 /* RailworkDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailworkDetectionTests.swift; sourceTree = "<group>"; };
+		ABC526A1291ABC0F00306543 /* RailworkDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailworkDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC526A5291ABC0F00306543 /* RailworkDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailworkDetectionUITests.swift; sourceTree = "<group>"; };
+		ABC526A7291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailworkDetectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABC5267E291ABC0E00306543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC52694291ABC0F00306543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC5269E291ABC0F00306543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABC52678291ABC0E00306543 = {
+			isa = PBXGroup;
+			children = (
+				ABC52683291ABC0E00306543 /* RailworkDetection */,
+				ABC5269A291ABC0F00306543 /* RailworkDetectionTests */,
+				ABC526A4291ABC0F00306543 /* RailworkDetectionUITests */,
+				ABC52682291ABC0E00306543 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABC52682291ABC0E00306543 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABC52681291ABC0E00306543 /* RailworkDetection.app */,
+				ABC52697291ABC0F00306543 /* RailworkDetectionTests.xctest */,
+				ABC526A1291ABC0F00306543 /* RailworkDetectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABC52683291ABC0E00306543 /* RailworkDetection */ = {
+			isa = PBXGroup;
+			children = (
+				ABC52684291ABC0E00306543 /* RailworkDetectionApp.swift */,
+				ABC52686291ABC0E00306543 /* ContentView.swift */,
+				ABC52688291ABC0F00306543 /* Assets.xcassets */,
+				ABC5268D291ABC0F00306543 /* Persistence.swift */,
+				ABC52692291ABC0F00306543 /* Info.plist */,
+				ABC5268F291ABC0F00306543 /* RailworkDetection.xcdatamodeld */,
+				ABC5268A291ABC0F00306543 /* Preview Content */,
+			);
+			path = RailworkDetection;
+			sourceTree = "<group>";
+		};
+		ABC5268A291ABC0F00306543 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABC5268B291ABC0F00306543 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABC5269A291ABC0F00306543 /* RailworkDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC5269B291ABC0F00306543 /* RailworkDetectionTests.swift */,
+			);
+			path = RailworkDetectionTests;
+			sourceTree = "<group>";
+		};
+		ABC526A4291ABC0F00306543 /* RailworkDetectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC526A5291ABC0F00306543 /* RailworkDetectionUITests.swift */,
+				ABC526A7291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift */,
+			);
+			path = RailworkDetectionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABC52680291ABC0E00306543 /* RailworkDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC526AB291ABC0F00306543 /* Build configuration list for PBXNativeTarget "RailworkDetection" */;
+			buildPhases = (
+				ABC5267D291ABC0E00306543 /* Sources */,
+				ABC5267E291ABC0E00306543 /* Frameworks */,
+				ABC5267F291ABC0E00306543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RailworkDetection;
+			productName = RailworkDetection;
+			productReference = ABC52681291ABC0E00306543 /* RailworkDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABC52696291ABC0F00306543 /* RailworkDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC526AE291ABC0F00306543 /* Build configuration list for PBXNativeTarget "RailworkDetectionTests" */;
+			buildPhases = (
+				ABC52693291ABC0F00306543 /* Sources */,
+				ABC52694291ABC0F00306543 /* Frameworks */,
+				ABC52695291ABC0F00306543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABC52699291ABC0F00306543 /* PBXTargetDependency */,
+			);
+			name = RailworkDetectionTests;
+			productName = RailworkDetectionTests;
+			productReference = ABC52697291ABC0F00306543 /* RailworkDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABC526A0291ABC0F00306543 /* RailworkDetectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC526B1291ABC0F00306543 /* Build configuration list for PBXNativeTarget "RailworkDetectionUITests" */;
+			buildPhases = (
+				ABC5269D291ABC0F00306543 /* Sources */,
+				ABC5269E291ABC0F00306543 /* Frameworks */,
+				ABC5269F291ABC0F00306543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABC526A3291ABC0F00306543 /* PBXTargetDependency */,
+			);
+			name = RailworkDetectionUITests;
+			productName = RailworkDetectionUITests;
+			productReference = ABC526A1291ABC0F00306543 /* RailworkDetectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABC52679291ABC0E00306543 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					ABC52680291ABC0E00306543 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					ABC52696291ABC0F00306543 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = ABC52680291ABC0E00306543;
+					};
+					ABC526A0291ABC0F00306543 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = ABC52680291ABC0E00306543;
+					};
+				};
+			};
+			buildConfigurationList = ABC5267C291ABC0E00306543 /* Build configuration list for PBXProject "RailworkDetection" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABC52678291ABC0E00306543;
+			productRefGroup = ABC52682291ABC0E00306543 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABC52680291ABC0E00306543 /* RailworkDetection */,
+				ABC52696291ABC0F00306543 /* RailworkDetectionTests */,
+				ABC526A0291ABC0F00306543 /* RailworkDetectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABC5267F291ABC0E00306543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC5268C291ABC0F00306543 /* Preview Assets.xcassets in Resources */,
+				ABC52689291ABC0F00306543 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC52695291ABC0F00306543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC5269F291ABC0F00306543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABC5267D291ABC0E00306543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC52691291ABC0F00306543 /* RailworkDetection.xcdatamodeld in Sources */,
+				ABC5268E291ABC0F00306543 /* Persistence.swift in Sources */,
+				ABC52687291ABC0E00306543 /* ContentView.swift in Sources */,
+				ABC52685291ABC0E00306543 /* RailworkDetectionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC52693291ABC0F00306543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC5269C291ABC0F00306543 /* RailworkDetectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC5269D291ABC0F00306543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC526A6291ABC0F00306543 /* RailworkDetectionUITests.swift in Sources */,
+				ABC526A8291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABC52699291ABC0F00306543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC52680291ABC0E00306543 /* RailworkDetection */;
+			targetProxy = ABC52698291ABC0F00306543 /* PBXContainerItemProxy */;
+		};
+		ABC526A3291ABC0F00306543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC52680291ABC0E00306543 /* RailworkDetection */;
+			targetProxy = ABC526A2291ABC0F00306543 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ABC526A9291ABC0F00306543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABC526AA291ABC0F00306543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABC526AC291ABC0F00306543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RailworkDetection/Preview Content\"";
+				DEVELOPMENT_TEAM = ZXTVKDXL8F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.faurskov.RailworkDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABC526AD291ABC0F00306543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RailworkDetection/Preview Content\"";
+				DEVELOPMENT_TEAM = ZXTVKDXL8F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.faurskov.RailworkDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ABC526AF291ABC0F00306543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXTVKDXL8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.faurskov.RailworkDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailworkDetection.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailworkDetection";
+			};
+			name = Debug;
+		};
+		ABC526B0291ABC0F00306543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXTVKDXL8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.faurskov.RailworkDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailworkDetection.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailworkDetection";
+			};
+			name = Release;
+		};
+		ABC526B2291ABC0F00306543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXTVKDXL8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.faurskov.RailworkDetectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RailworkDetection;
+			};
+			name = Debug;
+		};
+		ABC526B3291ABC0F00306543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXTVKDXL8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.faurskov.RailworkDetectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RailworkDetection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABC5267C291ABC0E00306543 /* Build configuration list for PBXProject "RailworkDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC526A9291ABC0F00306543 /* Debug */,
+				ABC526AA291ABC0F00306543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC526AB291ABC0F00306543 /* Build configuration list for PBXNativeTarget "RailworkDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC526AC291ABC0F00306543 /* Debug */,
+				ABC526AD291ABC0F00306543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC526AE291ABC0F00306543 /* Build configuration list for PBXNativeTarget "RailworkDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC526AF291ABC0F00306543 /* Debug */,
+				ABC526B0291ABC0F00306543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC526B1291ABC0F00306543 /* Build configuration list for PBXNativeTarget "RailworkDetectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC526B2291ABC0F00306543 /* Debug */,
+				ABC526B3291ABC0F00306543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ABC5268F291ABC0F00306543 /* RailworkDetection.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABC52690291ABC0F00306543 /* RailworkDetection.xcdatamodel */,
+			);
+			currentVersion = ABC52690291ABC0F00306543 /* RailworkDetection.xcdatamodel */;
+			path = RailworkDetection.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ABC52679291ABC0E00306543 /* Project object */;
+}
