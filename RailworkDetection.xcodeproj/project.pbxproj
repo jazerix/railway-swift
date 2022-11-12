@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB9263E6291D495800D62A4F /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263E5291D495800D62A4F /* Main.swift */; };
+		AB9263E8291D49E700D62A4F /* Recordings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263E7291D49E700D62A4F /* Recordings.swift */; };
+		AB9263EC291DB6DE00D62A4F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263EB291DB6DE00D62A4F /* LocationManager.swift */; };
+		AB9263EE291EDED700D62A4F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263ED291EDED700D62A4F /* Log.swift */; };
+		AB9263F2291F16CF00D62A4F /* MapLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263F1291F16CF00D62A4F /* MapLogic.swift */; };
+		AB9263F5291F171400D62A4F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263F4291F171400D62A4F /* MapView.swift */; };
 		ABC52685291ABC0E00306543 /* RailworkDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC52684291ABC0E00306543 /* RailworkDetectionApp.swift */; };
 		ABC52687291ABC0E00306543 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC52686291ABC0E00306543 /* ContentView.swift */; };
 		ABC52689291ABC0F00306543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC52688291ABC0F00306543 /* Assets.xcassets */; };
@@ -16,6 +22,8 @@
 		ABC5269C291ABC0F00306543 /* RailworkDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC5269B291ABC0F00306543 /* RailworkDetectionTests.swift */; };
 		ABC526A6291ABC0F00306543 /* RailworkDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC526A5291ABC0F00306543 /* RailworkDetectionUITests.swift */; };
 		ABC526A8291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC526A7291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift */; };
+		ABC526B6291ABCF200306543 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC526B5291ABCF200306543 /* CoreBluetooth.framework */; };
+		ABCA8AC6291B268A00E5EAAA /* BT.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8AC5291B268A00E5EAAA /* BT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB9263E5291D495800D62A4F /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		AB9263E7291D49E700D62A4F /* Recordings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recordings.swift; sourceTree = "<group>"; };
+		AB9263EB291DB6DE00D62A4F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AB9263ED291EDED700D62A4F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		AB9263F1291F16CF00D62A4F /* MapLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLogic.swift; sourceTree = "<group>"; };
+		AB9263F4291F171400D62A4F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		ABC52681291ABC0E00306543 /* RailworkDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailworkDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC52684291ABC0E00306543 /* RailworkDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailworkDetectionApp.swift; sourceTree = "<group>"; };
 		ABC52686291ABC0E00306543 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +63,8 @@
 		ABC526A1291ABC0F00306543 /* RailworkDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailworkDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC526A5291ABC0F00306543 /* RailworkDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailworkDetectionUITests.swift; sourceTree = "<group>"; };
 		ABC526A7291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailworkDetectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABC526B5291ABCF200306543 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		ABCA8AC5291B268A00E5EAAA /* BT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC526B6291ABCF200306543 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +93,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB9263EF291F16A000D62A4F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AB9263EB291DB6DE00D62A4F /* LocationManager.swift */,
+				ABCA8AC5291B268A00E5EAAA /* BT.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AB9263F0291F16A900D62A4F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AB9263F1291F16CF00D62A4F /* MapLogic.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AB9263F3291F16DC00D62A4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB9263E5291D495800D62A4F /* Main.swift */,
+				AB9263E7291D49E700D62A4F /* Recordings.swift */,
+				AB9263ED291EDED700D62A4F /* Log.swift */,
+				AB9263F4291F171400D62A4F /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		ABC52678291ABC0E00306543 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +128,7 @@
 				ABC5269A291ABC0F00306543 /* RailworkDetectionTests */,
 				ABC526A4291ABC0F00306543 /* RailworkDetectionUITests */,
 				ABC52682291ABC0E00306543 /* Products */,
+				ABC526B4291ABCF200306543 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +145,9 @@
 		ABC52683291ABC0E00306543 /* RailworkDetection */ = {
 			isa = PBXGroup;
 			children = (
+				AB9263F3291F16DC00D62A4F /* Views */,
+				AB9263F0291F16A900D62A4F /* Domain */,
+				AB9263EF291F16A000D62A4F /* Features */,
 				ABC52684291ABC0E00306543 /* RailworkDetectionApp.swift */,
 				ABC52686291ABC0E00306543 /* ContentView.swift */,
 				ABC52688291ABC0F00306543 /* Assets.xcassets */,
@@ -133,6 +182,14 @@
 				ABC526A7291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift */,
 			);
 			path = RailworkDetectionUITests;
+			sourceTree = "<group>";
+		};
+		ABC526B4291ABCF200306543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABC526B5291ABCF200306543 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +322,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9263E6291D495800D62A4F /* Main.swift in Sources */,
+				AB9263E8291D49E700D62A4F /* Recordings.swift in Sources */,
+				AB9263EE291EDED700D62A4F /* Log.swift in Sources */,
+				AB9263F5291F171400D62A4F /* MapView.swift in Sources */,
+				AB9263F2291F16CF00D62A4F /* MapLogic.swift in Sources */,
 				ABC52691291ABC0F00306543 /* RailworkDetection.xcdatamodeld in Sources */,
 				ABC5268E291ABC0F00306543 /* Persistence.swift in Sources */,
+				AB9263EC291DB6DE00D62A4F /* LocationManager.swift in Sources */,
 				ABC52687291ABC0E00306543 /* ContentView.swift in Sources */,
+				ABCA8AC6291B268A00E5EAAA /* BT.swift in Sources */,
 				ABC52685291ABC0E00306543 /* RailworkDetectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +494,16 @@
 				DEVELOPMENT_TEAM = ZXTVKDXL8F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RailworkDetection/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Railwork Detection";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,11 +528,16 @@
 				DEVELOPMENT_TEAM = ZXTVKDXL8F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RailworkDetection/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Railwork Detection";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
