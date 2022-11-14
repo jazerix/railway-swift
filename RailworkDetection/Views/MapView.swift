@@ -10,10 +10,15 @@ struct MapView: View {
     
    
     var body: some View {
-        Map(coordinateRegion: $mapLogic.region, showsUserLocation: true)
-            .cornerRadius(20)
-            .shadow(radius: 5)
-            .frame(height: 400)
+        Map(coordinateRegion: $mapLogic.region, showsUserLocation: true, annotationItems: mapLogic.joints) { joint in
+            MapMarker(coordinate: CLLocationCoordinate2D(
+                latitude: joint.coordinates.coordinates[1],
+                longitude: joint.coordinates.coordinates[0]
+            ))
+        }
+        .cornerRadius(20)
+        .shadow(radius: 5)
+        .frame(height: 400)
     }
 }
 

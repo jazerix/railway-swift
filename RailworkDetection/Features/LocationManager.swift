@@ -67,7 +67,7 @@ extension LocationManager: CLLocationManagerDelegate
         }
         currentLocation = locations.last!
         for listener in listeners {
-            listener("hello");
+            // listener("hello");
         }
     }
     
