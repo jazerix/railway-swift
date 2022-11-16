@@ -50,6 +50,11 @@ struct Main: View {
                 }.foregroundColor(location.locationEstablished ? .green : .blue)
                     .font(.subheadline)
                 MapView(mapLogic: MapLogic(locationManager: location))
+                    .disabled(true)
+                    .cornerRadius(20)
+                    .shadow(radius: 5)
+                    .frame(height: 400)
+                Text("00:00").padding(20).fontWeight(.bold).font(.largeTitle)
                 Spacer()
                 Button(action: start) {
                     Text("Start recording").foregroundColor(.white)
@@ -60,6 +65,7 @@ struct Main: View {
                 .cornerRadius(5)
             }.padding()
             .navigationBarTitle("Railwork Diagnostics")
+            .navigationBarTitleDisplayMode(.inline)
            
         }.onAppear(perform: btStuff)
     }

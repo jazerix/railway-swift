@@ -18,18 +18,40 @@ import MapKit
     
     @Published public var joints : [Joint] = []
     
+    public var history : [CLLocation] = [];
+    private var measuringFrom : CLLocation? = nil
+    
+    
+    
     private var locationManager : LocationManager
     
     init(locationManager : LocationManager)
     {
         self.locationManager = locationManager;
         locationManager.addListener(listener: {(a : String) in
+            if (locationManager.currentLocation == nil) {
+                return;
+            }
             self.region = MKCoordinateRegion(
                 center: CLLocationCoordinate2D(latitude: locationManager.currentLocation?.coordinate.latitude ?? 50, longitude: locationManager.currentLocation?.coordinate.longitude ?? 10),
-                span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
+                span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
             );
+            
+            if (self.measuringFrom == nil) {
+                self.history.append(locationManager.currentLocation!)
+                self.measuringFrom = locationManager.currentLocation!;
+            }
+            else {
+                let distanceBetween = locationManager.currentLocation!.distance(from: self.measuringFrom!);
+                print(distanceBetween);
+                if (distanceBetween > 100) { // if we've moved less than 100 meters we do not care
+                    print("Updating points")
+                    self.history.append(locationManager.currentLocation!);
+                    self.measuringFrom = locationManager.currentLocation;
+                }
+            }
+            self.closestMarkers()
         })
-        closestMarkers()
     }
     
     struct Joint : Decodable, Identifiable
@@ -54,7 +76,12 @@ import MapKit
     
     func closestMarkers()
     {
-        guard let url = URL(string: "https://railway.faurskov.dev/api/joints?lat=56.546048939208234&long=9.724198113707246") else {
+        let currentCoordinate : CLLocationCoordinate2D! = locationManager.currentLocation?.coordinate;
+        if (currentCoordinate == nil) {
+            return;
+        }
+        
+        guard let url = URL(string: "https://railway.faurskov.dev/api/joints?lat=\(currentCoordinate.latitude)&long=\(currentCoordinate.longitude)") else {
             fatalError("no bueno")
         }
         
@@ -66,8 +93,6 @@ import MapKit
                 fatalError("Unable to fetch markers");
             }
             let joints = try JSONDecoder().decode([Joint].self, from: data)
-           
-            
             self.joints = joints;
         }
     }
