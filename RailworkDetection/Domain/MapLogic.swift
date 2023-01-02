@@ -1,20 +1,19 @@
-//
-//  MapLogic.swift
-//  RailworkDetection
-//
-//  Created by Niels Faurskov on 12/11/2022.
-//
-
 import Foundation
 import CoreLocation
 import MapKit
 
-@MainActor class MapLogic : ObservableObject
+@MainActor class MapLogic : ObservableObject, RecordingSubscriber
 {
-    @Published public var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude:50.5, longitude: 14.254053016537693),
-                    span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
-    );
+    func start() {
+        showTrace = true;
+    }
+    
+    func stop() {
+        showTrace = false;
+        history.removeAll()
+    }
+    
+    @Published public var showTrace : Bool = false
     
     @Published public var joints : [Joint] = []
     
@@ -25,33 +24,30 @@ import MapKit
     
     private var locationManager : LocationManager
     
-    init(locationManager : LocationManager)
+    
+    init(locationManager : LocationManager, recordingTimer : RecordingTimer)
     {
         self.locationManager = locationManager;
-        locationManager.addListener(listener: {(a : String) in
-            if (locationManager.currentLocation == nil) {
+        locationManager.addListener(listener: {(location : CLLocation) in
+            if (self.showTrace == false) {
                 return;
             }
-            self.region = MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: locationManager.currentLocation?.coordinate.latitude ?? 50, longitude: locationManager.currentLocation?.coordinate.longitude ?? 10),
-                span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
-            );
-            
             if (self.measuringFrom == nil) {
-                self.history.append(locationManager.currentLocation!)
-                self.measuringFrom = locationManager.currentLocation!;
+                self.history.append(location)
+                self.measuringFrom = location;
             }
             else {
-                let distanceBetween = locationManager.currentLocation!.distance(from: self.measuringFrom!);
+                let distanceBetween = location.distance(from: self.measuringFrom!);
                 print(distanceBetween);
                 if (distanceBetween > 100) { // if we've moved less than 100 meters we do not care
                     print("Updating points")
-                    self.history.append(locationManager.currentLocation!);
-                    self.measuringFrom = locationManager.currentLocation;
+                    self.history.append(location);
+                    self.measuringFrom = location;
                 }
             }
-            self.closestMarkers()
+            //self.closestMarkers()
         })
+        recordingTimer.addSubscriber(subscriber: self)
     }
     
     struct Joint : Decodable, Identifiable

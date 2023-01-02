@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB54EE3C29394B4000813C3E /* RecordingSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54EE3B29394B4000813C3E /* RecordingSubscriber.swift */; };
+		AB54EE41293966D400813C3E /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54EE40293966D400813C3E /* FileItem.swift */; };
+		AB54EE4329396A2400813C3E /* RailwayCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54EE4229396A2400813C3E /* RailwayCoordinates.swift */; };
 		AB9263E6291D495800D62A4F /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263E5291D495800D62A4F /* Main.swift */; };
 		AB9263E8291D49E700D62A4F /* Recordings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263E7291D49E700D62A4F /* Recordings.swift */; };
 		AB9263EC291DB6DE00D62A4F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9263EB291DB6DE00D62A4F /* LocationManager.swift */; };
@@ -24,6 +27,13 @@
 		ABC526A8291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC526A7291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift */; };
 		ABC526B6291ABCF200306543 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC526B5291ABCF200306543 /* CoreBluetooth.framework */; };
 		ABCA8AC6291B268A00E5EAAA /* BT.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8AC5291B268A00E5EAAA /* BT.swift */; };
+		ABDFE4BA29365F1A00C0AB57 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFE4B929365F1A00C0AB57 /* Device.swift */; };
+		ABDFE4BD2936606500C0AB57 /* CalibrationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFE4BC2936606500C0AB57 /* CalibrationTypes.swift */; };
+		ABDFE4BF293660C100C0AB57 /* Calibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFE4BE293660C100C0AB57 /* Calibration.swift */; };
+		ABDFE4C12936B3A400C0AB57 /* BatteryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDFE4C02936B3A400C0AB57 /* BatteryInfo.swift */; };
+		ABFA50552937795800F6C8B4 /* RecordingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA50542937795800F6C8B4 /* RecordingTimer.swift */; };
+		ABFA50582937BA3000F6C8B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA50572937BA3000F6C8B4 /* SettingsView.swift */; };
+		ABFA505A2937C5AD00F6C8B4 /* ListSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA50592937C5AD00F6C8B4 /* ListSelection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB54EE3B29394B4000813C3E /* RecordingSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSubscriber.swift; sourceTree = "<group>"; };
+		AB54EE3D29394DF200813C3E /* TrainRide.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TrainRide.gpx; sourceTree = "<group>"; };
+		AB54EE40293966D400813C3E /* FileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItem.swift; sourceTree = "<group>"; };
+		AB54EE4229396A2400813C3E /* RailwayCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayCoordinates.swift; sourceTree = "<group>"; };
 		AB9263E5291D495800D62A4F /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		AB9263E7291D49E700D62A4F /* Recordings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recordings.swift; sourceTree = "<group>"; };
 		AB9263EB291DB6DE00D62A4F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -65,6 +79,13 @@
 		ABC526A7291ABC0F00306543 /* RailworkDetectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailworkDetectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ABC526B5291ABCF200306543 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		ABCA8AC5291B268A00E5EAAA /* BT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT.swift; sourceTree = "<group>"; };
+		ABDFE4B929365F1A00C0AB57 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		ABDFE4BC2936606500C0AB57 /* CalibrationTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationTypes.swift; sourceTree = "<group>"; };
+		ABDFE4BE293660C100C0AB57 /* Calibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calibration.swift; sourceTree = "<group>"; };
+		ABDFE4C02936B3A400C0AB57 /* BatteryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfo.swift; sourceTree = "<group>"; };
+		ABFA50542937795800F6C8B4 /* RecordingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingTimer.swift; sourceTree = "<group>"; };
+		ABFA50572937BA3000F6C8B4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ABFA50592937C5AD00F6C8B4 /* ListSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSelection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +126,9 @@
 		AB9263F0291F16A900D62A4F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				ABDFE4BB29365F8600C0AB57 /* Device */,
 				AB9263F1291F16CF00D62A4F /* MapLogic.swift */,
+				ABFA50542937795800F6C8B4 /* RecordingTimer.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -124,6 +147,7 @@
 		ABC52678291ABC0E00306543 = {
 			isa = PBXGroup;
 			children = (
+				AB54EE3D29394DF200813C3E /* TrainRide.gpx */,
 				ABC52683291ABC0E00306543 /* RailworkDetection */,
 				ABC5269A291ABC0F00306543 /* RailworkDetectionTests */,
 				ABC526A4291ABC0F00306543 /* RailworkDetectionUITests */,
@@ -145,6 +169,7 @@
 		ABC52683291ABC0E00306543 /* RailworkDetection */ = {
 			isa = PBXGroup;
 			children = (
+				ABFA50562937BA1C00F6C8B4 /* Components */,
 				AB9263F3291F16DC00D62A4F /* Views */,
 				AB9263F0291F16A900D62A4F /* Domain */,
 				AB9263EF291F16A000D62A4F /* Features */,
@@ -155,6 +180,9 @@
 				ABC52692291ABC0F00306543 /* Info.plist */,
 				ABC5268F291ABC0F00306543 /* RailworkDetection.xcdatamodeld */,
 				ABC5268A291ABC0F00306543 /* Preview Content */,
+				ABDFE4C02936B3A400C0AB57 /* BatteryInfo.swift */,
+				AB54EE3B29394B4000813C3E /* RecordingSubscriber.swift */,
+				AB54EE4229396A2400813C3E /* RailwayCoordinates.swift */,
 			);
 			path = RailworkDetection;
 			sourceTree = "<group>";
@@ -190,6 +218,26 @@
 				ABC526B5291ABCF200306543 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABDFE4BB29365F8600C0AB57 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				ABDFE4B929365F1A00C0AB57 /* Device.swift */,
+				ABDFE4BC2936606500C0AB57 /* CalibrationTypes.swift */,
+				ABDFE4BE293660C100C0AB57 /* Calibration.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		ABFA50562937BA1C00F6C8B4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ABFA50572937BA3000F6C8B4 /* SettingsView.swift */,
+				ABFA50592937C5AD00F6C8B4 /* ListSelection.swift */,
+				AB54EE40293966D400813C3E /* FileItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,17 +370,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB54EE3C29394B4000813C3E /* RecordingSubscriber.swift in Sources */,
 				AB9263E6291D495800D62A4F /* Main.swift in Sources */,
 				AB9263E8291D49E700D62A4F /* Recordings.swift in Sources */,
 				AB9263EE291EDED700D62A4F /* Log.swift in Sources */,
+				ABFA50582937BA3000F6C8B4 /* SettingsView.swift in Sources */,
+				AB54EE4329396A2400813C3E /* RailwayCoordinates.swift in Sources */,
+				ABFA505A2937C5AD00F6C8B4 /* ListSelection.swift in Sources */,
+				ABDFE4BA29365F1A00C0AB57 /* Device.swift in Sources */,
 				AB9263F5291F171400D62A4F /* MapView.swift in Sources */,
 				AB9263F2291F16CF00D62A4F /* MapLogic.swift in Sources */,
 				ABC52691291ABC0F00306543 /* RailworkDetection.xcdatamodeld in Sources */,
+				ABFA50552937795800F6C8B4 /* RecordingTimer.swift in Sources */,
 				ABC5268E291ABC0F00306543 /* Persistence.swift in Sources */,
 				AB9263EC291DB6DE00D62A4F /* LocationManager.swift in Sources */,
+				ABDFE4BD2936606500C0AB57 /* CalibrationTypes.swift in Sources */,
 				ABC52687291ABC0E00306543 /* ContentView.swift in Sources */,
 				ABCA8AC6291B268A00E5EAAA /* BT.swift in Sources */,
+				AB54EE41293966D400813C3E /* FileItem.swift in Sources */,
+				ABDFE4BF293660C100C0AB57 /* Calibration.swift in Sources */,
 				ABC52685291ABC0E00306543 /* RailworkDetectionApp.swift in Sources */,
+				ABDFE4C12936B3A400C0AB57 /* BatteryInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

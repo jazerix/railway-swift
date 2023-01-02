@@ -11,7 +11,6 @@ import CoreBluetooth
 
 struct ContentView: View {
     
-    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -25,15 +24,19 @@ struct ContentView: View {
                 Image(systemName: "tram")
                 Text("Diagnostics")
             }
-            Log().tabItem {
+            /*Log().tabItem {
                 Image(systemName: "doc.text")
                 Text("Log")
-            }
+            }*/
             Recordings().tabItem {
                 Image(systemName: "waveform")
                 Text("Recordings")
             }
             
+        }.onAppear {
+            UIApplication.shared.isIdleTimerDisabled = true;
+        }.onDisappear {
+            UIApplication.shared.isIdleTimerDisabled = false;
         }
         
     }

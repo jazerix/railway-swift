@@ -8,6 +8,7 @@ struct MapView: UIViewRepresentable {
     typealias UIViewType = MKMapView
     
     @StateObject var mapLogic : MapLogic
+   // @Binding var recording : Bool
     
 
     
@@ -27,16 +28,17 @@ struct MapView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView();
-        mapView.setRegion(mapLogic.region, animated: true)
         mapView.showsUserLocation = true;
+        mapView.setUserTrackingMode(.follow, animated: true)
+        
         mapView.delegate = context.coordinator;
         
         return mapView;
     }
     
     func updateUIView(_ mapView: MKMapView, context: Context) {
-        mapView.setRegion(self.mapLogic.region, animated: true);
         mapView.removeAnnotations(mapView.annotations);
+        mapView.setUserTrackingMode(.follow, animated: true)
         mapView.removeOverlays(mapView.overlays);
         
         let coordinates = mapLogic.history.map { $0.coordinate }
@@ -70,8 +72,10 @@ struct MapView: UIViewRepresentable {
 }
 
 struct MapView_Previews: PreviewProvider {
+    @State static var recording : Bool = false;
+    static var recordingTimer = RecordingTimer()
     static var previews: some View {
-        MapView(mapLogic: MapLogic(locationManager: LocationManager())).previewLayout(.sizeThatFits)
+        MapView(mapLogic: MapLogic(locationManager: LocationManager(), recordingTimer: recordingTimer)).previewLayout(.sizeThatFits)
             .previewDisplayName("Default")
     }
 }

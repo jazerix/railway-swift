@@ -14,7 +14,7 @@ class LocationManager : NSObject, ObservableObject
     @Published var currentLocation : CLLocation? = nil
     @Published var locationEstablished : Bool = false
     
-    private var listeners : [(String) -> (Void)] = []
+    private var listeners : [(CLLocation) -> (Void)] = []
     
     public var exposedLocation: CLLocation? {
         return self.locationManager.location
@@ -32,7 +32,7 @@ class LocationManager : NSObject, ObservableObject
         print(location.coordinate.latitude, location.coordinate.longitude)
     }
     
-    public func addListener(listener : @escaping (String) -> (Void))
+    public func addListener(listener : @escaping (CLLocation) -> (Void))
     {
         listeners.append(listener);
     }
@@ -61,13 +61,12 @@ extension LocationManager: CLLocationManagerDelegate
         if (locations.count == 0) {
             return
         }
-        print(locations)
         if (locationEstablished == false) {
             locationEstablished = true
         }
         currentLocation = locations.last!
         for listener in listeners {
-            listener("hello");
+            listener(currentLocation!);
         }
     }
     

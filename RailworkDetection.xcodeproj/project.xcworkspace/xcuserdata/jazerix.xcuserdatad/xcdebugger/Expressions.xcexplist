@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #2 in Main.body.getter:Main.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "st">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BT.timeData(characteristic:):BT.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "recording">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in BT.recordingIdData(characteristic:):BT.swift">
+      </ContextState>
+      <ContextState
+         contextName = "BT.sampleData(characteristic:):BT.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "recordingTimer?.secondsPassed">
+            </PersistentString>
+            <PersistentString
+               value = "self.averageSamples">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BT.peripheral(_:didUpdateValueFor:error:):BT.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "characteristic.value!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
